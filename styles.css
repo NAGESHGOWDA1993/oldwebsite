@@ -1,0 +1,385 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html
+{
+    scroll-behavior: smooth;
+    scroll-padding:
+    var(--scroll-padding,5rem);
+}
+body
+{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    overflow-x: hidden;
+}
+#header
+{
+    width: 100%;
+    height: 135vh;
+    background-image: linear-gradient(rgba(90, 84, 84, 0.75),rgba(90, 84, 84, 0.75)),url(back.jpg);
+    background-size: cover;
+   background-position:top center ;
+    animation: myslide;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+   
+   
+   
+   
+}
+@keyframes myslide 
+{
+  from{width: 0%;}
+  to{width: 100%;}
+}
+.container
+{
+    padding: -5px 10vh;
+     position: relative;
+    bottom: 60px;
+}
+
+.logo
+{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -50px;
+    cursor: pointer;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color:rgb(255, 255, 255) ;
+    text-decoration: none;
+   
+    position: relative;
+    top: -10px;
+    right: 20px;
+    
+    font-size: 100%;
+    
+   
+    text-transform: uppercase;
+
+}
+nav ul li a::after
+{
+    content:'' ;
+   height:  3px;
+   width: 0%;
+   background:blueviolet ;
+   position: absolute;
+   left:0 ;
+   top: 3.361344537815126vh;
+   transition:  all 0.5s;
+}
+   nav ul li a:hover::after
+  {
+   width: 100%;
+
+  }
+  nav ul li a:hover
+  {
+    
+    font-size: 115%;
+    color: blueviolet;
+  }
+  .header-text 
+  {
+    font-size: large;
+    margin: 40%;
+   font-size: auto;
+   
+   top: -350px;
+   position: relative;
+   
+    
+  }
+ 
+  .header-text h1 span
+  {
+    color: orange;
+    font-size: 105%;
+  }
+#about
+{
+    padding: 80px 0;
+    color: rgb(150, 233, 233);;
+    position: absolute;
+    top: 151.26050420168067vh;
+    
+}
+.about-col-1 img
+{
+   height: 500px;
+   width: 400px;
+   border-radius: 40px;
+   position: relative; 
+    bottom: 20px;
+
+  
+}
+
+.row
+{
+    display: flex;
+    justify-content: space-between;
+}
+.about-col-1
+{
+    flex-basis: 35%;
+}
+.about-col-2
+{
+flex-basis: 90%;
+}
+.subtitle
+{
+    position: relative;
+    left: 100px;
+    bottom: 20px;
+    font-size: 40px;
+    font-weight: 600;
+}
+.para
+{  
+    font-size:medium;
+    font-weight: 400;
+    font-family: Helvetica;
+    position: relative;
+    color: #ffffffbc;
+    left:10px;
+    transition: 2s;
+
+}
+.para:hover
+{  
+    font-size:medium;
+    font-weight: 400;
+    font-family: Helvetica;
+    position: relative;
+    color: #fff;
+    left:10px;
+}
+.tab-links
+{
+    
+    margin-inline-start: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+   
+}  
+.tab-titles
+{
+    display: flex;
+    margin: 20px 0 40px;
+}
+#auto-type
+{
+    color: blue;
+    font-size: x-large;
+}
+.tab-links::after{
+    content: '';
+    position: absolute;
+    background-color: aquamarine;
+    width: 0;
+    height: 8px;
+    bottom: -8px;
+    left: 0;
+    transition: 0.5s;
+}
+
+.gmail
+{
+    height: 50px;
+    width: 60px;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+   
+  
+}
+.gmail:hover
+{
+    height: 60px;
+    width: 70px;
+    cursor: pointer;
+    position: relative;
+    top: 0px;
+}
+  
+.github
+{
+    height: 45px;
+    width: 40px;
+    cursor: pointer;
+    
+}
+.github:hover
+{
+    height: 55px;
+    width: 50px;
+    cursor: pointer;
+    
+    
+}
+.linkedin
+{
+    height: 90px;
+    width: 130px;
+    cursor: pointer;
+    position: relative;
+    right: 40px;
+    bottom: 15px;
+}
+.linkedin:hover
+{
+    height: 100px;
+    width: 140px;
+    cursor: pointer;
+    position: relative;
+    right: 30px;
+    bottom: 15px;
+}
+.medium
+{
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    position: relative;
+    right: 80px;
+    bottom: 5px;
+}
+.medium:hover
+{
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    position: relative;
+    right: 80px;
+    bottom: 5px;
+}
+.whatsapp
+{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    position: relative;
+    right: 90px;
+    bottom: 2px;
+}
+.whatsapp:hover
+{
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    position: relative;
+    right: 90px;
+    bottom: 10px;
+}
+
+.imae{
+    margin-inline-start: 60px;
+    
+    cursor: pointer;
+    
+   
+
+}
+.tab-links.active-link::after
+{
+    width: 50%;
+}
+.tab-contents ul li
+{
+    list-style: none;
+    margin: 10px 0;
+
+}
+.tab-contents ul li span{
+    font-size: 12px;
+    color: rgb(0, 26, 255);
+}
+.tab-contents
+{
+    position: relative;
+    right: -20px;
+    display: none;
+}
+.tab-contents.active-tab
+{
+display: block;
+}
+#form-container{
+    position: relative;
+    top: 100.84033613445378vh;
+    align-items: center;
+    left: 0%;
+    
+}
+.empty{
+    position: relative ;
+    height: 100%;
+}
+form{
+    
+    
+    width: fit-content;
+    position: relative;
+    top: -100px;
+    right: -400px;
+
+ 
+}
+form input
+{
+    background: #fff;
+    border: 0;
+    outline: none;
+    padding: 10px 20px;
+    height: 70px;
+    width: 400px;
+    font-size: 16px;
+   
+}
+form button
+{
+    background: #61b752;
+    border :none;
+outline: none;
+height:50px ;
+width: 400px;
+position: relative;
+top: 0px;
+left:0px;
+cursor: pointer;
+
+
+}
+#emai
+{
+    font-size: large;
+    position: relative;
+    top: 10px;
+   
+    font-family: sans-serif;
+    color: #61b752;
+}
+@media all and (max-width: 600px){
+   #header {
+    visibility: hidden;
+   }
+}
